@@ -1,4 +1,4 @@
-# bungie-sdk-python.UserApi
+# bungie_sdk_python.UserApi
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -25,18 +25,18 @@ Returns a list of all available user themes.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.UserApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.UserApi(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_available_themes()
@@ -76,18 +76,18 @@ Loads a bungienet user by membership id.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.UserApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.UserApi(bungie_sdk_python.ApiClient(configuration))
 id = 56 # int | The requested Bungie.net membership id.
 
 try:
@@ -131,18 +131,18 @@ Returns a list of accounts associated with the supplied membership ID and member
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.UserApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.UserApi(bungie_sdk_python.ApiClient(configuration))
 membership_id = 56 # int | The membership ID of the target user.
 membership_type = 56 # int | Type of the supplied membership ID.
 
@@ -188,18 +188,18 @@ Returns a list of accounts associated with signed in user. This is useful for OA
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.UserApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.UserApi(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_membership_data_for_current_user()
@@ -213,16 +213,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.UserApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.UserApi(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_membership_data_for_current_user()
@@ -262,18 +262,18 @@ Returns a user's linked Partnerships.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.UserApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.UserApi(bungie_sdk_python.ApiClient(configuration))
 membership_id = 56 # int | The ID of the member for whom partnerships should be returned.
 
 try:
@@ -317,18 +317,18 @@ Returns a list of possible users based on the search string
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.UserApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.UserApi(bungie_sdk_python.ApiClient(configuration))
 q = 'q_example' # str | The search string. (optional)
 
 try:

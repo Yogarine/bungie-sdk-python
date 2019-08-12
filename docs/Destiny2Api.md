@@ -1,4 +1,4 @@
-# bungie-sdk-python.Destiny2Api
+# bungie_sdk_python.Destiny2Api
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -55,18 +55,18 @@ Returns the action token if user approves the request.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 correlation_id = 'correlation_id_example' # str | The identifier for the advanced write action request.
 
 try:
@@ -81,16 +81,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 correlation_id = 'correlation_id_example' # str | The identifier for the advanced write action request.
 
 try:
@@ -134,19 +134,19 @@ Initialize a request to perform an advanced write action.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-awa_permission_requested = bungie-sdk-python.AwaPermissionRequested() # Destiny.Advanced.AwaPermissionRequested | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+awa_permission_requested = bungie_sdk_python.AwaPermissionRequested() # Destiny.Advanced.AwaPermissionRequested | 
 
 try:
     api_response = api_instance.awa_initialize_request(awa_permission_requested)
@@ -160,17 +160,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-awa_permission_requested = bungie-sdk-python.AwaPermissionRequested() # Destiny.Advanced.AwaPermissionRequested | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+awa_permission_requested = bungie_sdk_python.AwaPermissionRequested() # Destiny.Advanced.AwaPermissionRequested | 
 
 try:
     api_response = api_instance.awa_initialize_request(awa_permission_requested)
@@ -213,19 +213,19 @@ Provide the result of the user interaction. Called by the Bungie Destiny App to 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-awa_user_response = bungie-sdk-python.AwaUserResponse() # Destiny.Advanced.AwaUserResponse | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+awa_user_response = bungie_sdk_python.AwaUserResponse() # Destiny.Advanced.AwaUserResponse | 
 
 try:
     api_response = api_instance.awa_provide_authorization_result(awa_user_response)
@@ -268,19 +268,19 @@ Equip an item. You must have a valid Destiny Account, and either be in a social 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_item_action_request = bungie-sdk-python.DestinyItemActionRequest() # Destiny.Requests.Actions.DestinyItemActionRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_item_action_request = bungie_sdk_python.DestinyItemActionRequest() # Destiny.Requests.Actions.DestinyItemActionRequest | 
 
 try:
     api_response = api_instance.equip_item(destiny_item_action_request)
@@ -294,17 +294,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_item_action_request = bungie-sdk-python.DestinyItemActionRequest() # Destiny.Requests.Actions.DestinyItemActionRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_item_action_request = bungie_sdk_python.DestinyItemActionRequest() # Destiny.Requests.Actions.DestinyItemActionRequest | 
 
 try:
     api_response = api_instance.equip_item(destiny_item_action_request)
@@ -347,19 +347,19 @@ Equip a list of items by itemInstanceIds. You must have a valid Destiny Account,
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_item_set_action_request = bungie-sdk-python.DestinyItemSetActionRequest() # Destiny.Requests.Actions.DestinyItemSetActionRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_item_set_action_request = bungie_sdk_python.DestinyItemSetActionRequest() # Destiny.Requests.Actions.DestinyItemSetActionRequest | 
 
 try:
     api_response = api_instance.equip_items(destiny_item_set_action_request)
@@ -373,17 +373,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_item_set_action_request = bungie-sdk-python.DestinyItemSetActionRequest() # Destiny.Requests.Actions.DestinyItemSetActionRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_item_set_action_request = bungie_sdk_python.DestinyItemSetActionRequest() # Destiny.Requests.Actions.DestinyItemSetActionRequest | 
 
 try:
     api_response = api_instance.equip_items(destiny_item_set_action_request)
@@ -426,18 +426,18 @@ Gets activity history stats for indicated character.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | The id of the character to retrieve.
 destiny_membership_id = 56 # int | The Destiny membershipId of the user to retrieve.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -491,18 +491,18 @@ Returns character information for the supplied character.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | ID of the character.
 destiny_membership_id = 56 # int | Destiny membership ID.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -552,18 +552,18 @@ Gets aggregated stats for a clan using the same categories as the clan leaderboa
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the clan whose leaderboards you wish to fetch.
 modes = 'modes_example' # str | List of game modes for which to get leaderboards. See the documentation for DestinyActivityModeType for valid values, and pass in string representation, comma delimited. (optional)
 
@@ -609,18 +609,18 @@ Gets leaderboards with the signed in user's friends and the supplied destinyMemb
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the clan whose leaderboards you wish to fetch.
 maxtop = 56 # int | Maximum number of top players to return. Use a large number to get entire leaderboard. (optional)
 modes = 'modes_example' # str | List of game modes for which to get leaderboards. See the documentation for DestinyActivityModeType for valid values, and pass in string representation, comma delimited. (optional)
@@ -670,18 +670,18 @@ Returns information on the weekly clan rewards and if the clan has earned them o
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | A valid group id of clan.
 
 try:
@@ -725,18 +725,18 @@ Given a Presentation Node that has Collectibles as direct descendants, this will
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | The Destiny Character ID of the character for whom we're getting collectible detail info.
 collectible_presentation_node_hash = 56 # int | The hash identifier of the Presentation Node for whom we should return collectible details. Details will only be returned for collectibles that are direct descendants of this node.
 destiny_membership_id = 56 # int | Destiny membership ID of another user. You may be denied.
@@ -788,18 +788,18 @@ Gets all activities the character has participated in together with aggregate st
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | The specific character whose activities should be returned.
 destiny_membership_id = 56 # int | The Destiny membershipId of the user to retrieve.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -847,18 +847,18 @@ Returns the static definition of an entity of the given Type and hash identifier
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 entity_type = 'entity_type_example' # str | The type of entity for whom you would like results. These correspond to the entity's definition contract name. For instance, if you are looking for items, this property should be 'DestinyInventoryItemDefinition'. PREVIEW: This endpoint is still in beta, and may experience rough edges. The schema is tentatively in final form, but there may be bugs that prevent desirable operation.
 hash_identifier = 56 # int | The hash identifier for the specific Entity you want returned.
 
@@ -904,18 +904,18 @@ Returns the current version of the manifest as a json object.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_destiny_manifest()
@@ -955,18 +955,18 @@ Gets historical stats for indicated character.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | The id of the character to retrieve. You can omit this character ID or set it to 0 to get aggregate stats across all characters.
 destiny_membership_id = 56 # int | The Destiny membershipId of the user to retrieve.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -1024,18 +1024,18 @@ Gets historical stats definitions.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_historical_stats_definition()
@@ -1075,18 +1075,18 @@ Gets aggregate historical stats organized around each character for a given acco
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 destiny_membership_id = 56 # int | The Destiny membershipId of the user to retrieve.
 membership_type = 56 # int | A valid non-BungieNet membership type.
 groups = [56] # list[int] | Groups of stats to include, otherwise only general stats are returned. Comma separated list is allowed. Values: General, Weapons, Medals. (optional)
@@ -1134,18 +1134,18 @@ Retrieve the details of an instanced Destiny Item. An instanced Destiny item is 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 destiny_membership_id = 56 # int | The membership ID of the destiny profile.
 item_instance_id = 56 # int | The Instance ID of the destiny item.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -1195,18 +1195,18 @@ Gets leaderboards with the signed in user's friends and the supplied destinyMemb
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 destiny_membership_id = 56 # int | The Destiny membershipId of the user to retrieve.
 membership_type = 56 # int | A valid non-BungieNet membership type.
 maxtop = 56 # int | Maximum number of top players to return. Use a large number to get entire leaderboard. (optional)
@@ -1258,18 +1258,18 @@ Gets leaderboards with the signed in user's friends and the supplied destinyMemb
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | The specific character to build the leaderboard around for the provided Destiny Membership.
 destiny_membership_id = 56 # int | The Destiny membershipId of the user to retrieve.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -1323,18 +1323,18 @@ Returns a summary information about all profiles linked to the requesting member
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 membership_id = 56 # int | The ID of the membership whose linked Destiny accounts you want returned. Make sure your membership ID matches its Membership Type: don't pass us a PSN membership ID and the XBox membership type, it's not going to work!
 membership_type = 56 # int | The type for the membership whose linked Destiny accounts you want returned.
 get_all_memberships = True # bool | (optional) if set to 'true', all memberships regardless of whether they're obscured by overrides will be returned. Normal privacy restrictions on account linking will still apply no matter what. (optional)
@@ -1382,18 +1382,18 @@ Gets the available post game carnage report for the activity ID.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 activity_id = 56 # int | The ID of the activity whose PGCR is requested.
 
 try:
@@ -1437,18 +1437,18 @@ Returns Destiny Profile information for the supplied membership.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 destiny_membership_id = 56 # int | Destiny membership ID.
 membership_type = 56 # int | A valid non-BungieNet membership type.
 components = [56] # list[int] | A comma separated list of components to return (as strings or numeric values). See the DestinyComponentType enum for valid components to request. You must request at least one component to receive results. (optional)
@@ -1496,18 +1496,18 @@ Gets custom localized content for the milestone of the given hash, if it exists.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 milestone_hash = 56 # int | The identifier for the milestone to be returned.
 
 try:
@@ -1551,18 +1551,18 @@ Gets public information about currently available Milestones.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_public_milestones()
@@ -1602,18 +1602,18 @@ Get items available from vendors where the vendors have items for sale that are 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 components = [56] # list[int] | A comma separated list of components to return (as strings or numeric values). See the DestinyComponentType enum for valid components to request. You must request at least one component to receive results. (optional)
 
 try:
@@ -1657,18 +1657,18 @@ Gets details about unique weapon usage, including all exotic weapons.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | The id of the character to retrieve.
 destiny_membership_id = 56 # int | The Destiny membershipId of the user to retrieve.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -1716,18 +1716,18 @@ Get the details of a specific Vendor.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | The Destiny Character ID of the character for whom we're getting vendor info.
 destiny_membership_id = 56 # int | Destiny membership ID of another user. You may be denied.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -1779,18 +1779,18 @@ Get currently available vendors from the list of vendors that can possibly have 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 character_id = 56 # int | The Destiny Character ID of the character for whom we're getting vendor info.
 destiny_membership_id = 56 # int | Destiny membership ID of another user. You may be denied.
 membership_type = 56 # int | A valid non-BungieNet membership type.
@@ -1840,19 +1840,19 @@ Insert a plug into a socketed item. I know how it sounds, but I assure you it's 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_insert_plugs_action_request = bungie-sdk-python.DestinyInsertPlugsActionRequest() # Destiny.Requests.Actions.DestinyInsertPlugsActionRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_insert_plugs_action_request = bungie_sdk_python.DestinyInsertPlugsActionRequest() # Destiny.Requests.Actions.DestinyInsertPlugsActionRequest | 
 
 try:
     api_response = api_instance.insert_socket_plug(destiny_insert_plugs_action_request)
@@ -1866,17 +1866,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_insert_plugs_action_request = bungie-sdk-python.DestinyInsertPlugsActionRequest() # Destiny.Requests.Actions.DestinyInsertPlugsActionRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_insert_plugs_action_request = bungie_sdk_python.DestinyInsertPlugsActionRequest() # Destiny.Requests.Actions.DestinyInsertPlugsActionRequest | 
 
 try:
     api_response = api_instance.insert_socket_plug(destiny_insert_plugs_action_request)
@@ -1919,19 +1919,19 @@ Extract an item from the Postmaster, with whatever implications that may entail.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_postmaster_transfer_request = bungie-sdk-python.DestinyPostmasterTransferRequest() # Destiny.Requests.Actions.DestinyPostmasterTransferRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_postmaster_transfer_request = bungie_sdk_python.DestinyPostmasterTransferRequest() # Destiny.Requests.Actions.DestinyPostmasterTransferRequest | 
 
 try:
     api_response = api_instance.pull_from_postmaster(destiny_postmaster_transfer_request)
@@ -1945,17 +1945,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_postmaster_transfer_request = bungie-sdk-python.DestinyPostmasterTransferRequest() # Destiny.Requests.Actions.DestinyPostmasterTransferRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_postmaster_transfer_request = bungie_sdk_python.DestinyPostmasterTransferRequest() # Destiny.Requests.Actions.DestinyPostmasterTransferRequest | 
 
 try:
     api_response = api_instance.pull_from_postmaster(destiny_postmaster_transfer_request)
@@ -1998,20 +1998,20 @@ Report a player that you met in an activity that was engaging in ToS-violating a
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 activity_id = 56 # int | The ID of the activity where you ran into the brigand that you're reporting.
-destiny_report_offense_pgcr_request = bungie-sdk-python.DestinyReportOffensePgcrRequest() # Destiny.Reporting.Requests.DestinyReportOffensePgcrRequest | 
+destiny_report_offense_pgcr_request = bungie_sdk_python.DestinyReportOffensePgcrRequest() # Destiny.Reporting.Requests.DestinyReportOffensePgcrRequest | 
 
 try:
     api_response = api_instance.report_offensive_post_game_carnage_report_player(activity_id, destiny_report_offense_pgcr_request)
@@ -2025,18 +2025,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 activity_id = 56 # int | The ID of the activity where you ran into the brigand that you're reporting.
-destiny_report_offense_pgcr_request = bungie-sdk-python.DestinyReportOffensePgcrRequest() # Destiny.Reporting.Requests.DestinyReportOffensePgcrRequest | 
+destiny_report_offense_pgcr_request = bungie_sdk_python.DestinyReportOffensePgcrRequest() # Destiny.Reporting.Requests.DestinyReportOffensePgcrRequest | 
 
 try:
     api_response = api_instance.report_offensive_post_game_carnage_report_player(activity_id, destiny_report_offense_pgcr_request)
@@ -2080,18 +2080,18 @@ Gets a page list of Destiny items.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 search_term = 'search_term_example' # str | The string to use when searching for Destiny entities.
 type = 'type_example' # str | The type of entity for whom you would like results. These correspond to the entity's definition contract name. For instance, if you are looking for items, this property should be 'DestinyInventoryItemDefinition'.
 page = 56 # int | Page number to return, starting with 0. (optional)
@@ -2139,18 +2139,18 @@ Returns a list of Destiny memberships given a full Gamertag or PSN ID.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
 display_name = 'display_name_example' # str | The full gamertag or PSN id of the player. Spaces and case are ignored.
 membership_type = 56 # int | A valid non-BungieNet membership type, or All.
 
@@ -2196,19 +2196,19 @@ Set the Lock State for an instanced item. You must have a valid Destiny Account.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_item_state_request = bungie-sdk-python.DestinyItemStateRequest() # Destiny.Requests.Actions.DestinyItemStateRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_item_state_request = bungie_sdk_python.DestinyItemStateRequest() # Destiny.Requests.Actions.DestinyItemStateRequest | 
 
 try:
     api_response = api_instance.set_item_lock_state(destiny_item_state_request)
@@ -2222,17 +2222,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_item_state_request = bungie-sdk-python.DestinyItemStateRequest() # Destiny.Requests.Actions.DestinyItemStateRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_item_state_request = bungie_sdk_python.DestinyItemStateRequest() # Destiny.Requests.Actions.DestinyItemStateRequest | 
 
 try:
     api_response = api_instance.set_item_lock_state(destiny_item_state_request)
@@ -2275,19 +2275,19 @@ Transfer an item to/from your vault. You must have a valid Destiny account. You 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_item_transfer_request = bungie-sdk-python.DestinyItemTransferRequest() # Destiny.Requests.DestinyItemTransferRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_item_transfer_request = bungie_sdk_python.DestinyItemTransferRequest() # Destiny.Requests.DestinyItemTransferRequest | 
 
 try:
     api_response = api_instance.transfer_item(destiny_item_transfer_request)
@@ -2301,17 +2301,17 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.Destiny2Api(bungie-sdk-python.ApiClient(configuration))
-destiny_item_transfer_request = bungie-sdk-python.DestinyItemTransferRequest() # Destiny.Requests.DestinyItemTransferRequest | 
+api_instance = bungie_sdk_python.Destiny2Api(bungie_sdk_python.ApiClient(configuration))
+destiny_item_transfer_request = bungie_sdk_python.DestinyItemTransferRequest() # Destiny.Requests.DestinyItemTransferRequest | 
 
 try:
     api_response = api_instance.transfer_item(destiny_item_transfer_request)

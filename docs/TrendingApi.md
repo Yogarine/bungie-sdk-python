@@ -1,4 +1,4 @@
-# bungie-sdk-python.TrendingApi
+# bungie_sdk_python.TrendingApi
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -22,18 +22,18 @@ Returns trending items for Bungie.net, collapsed into the first page of items pe
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.TrendingApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.TrendingApi(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_trending_categories()
@@ -73,18 +73,18 @@ Returns paginated lists of trending items for a category.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.TrendingApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.TrendingApi(bungie_sdk_python.ApiClient(configuration))
 category_id = 'category_id_example' # str | The ID of the category for whom you want additional results.
 page_number = 56 # int | The page # of results to return.
 
@@ -130,18 +130,18 @@ Returns the detailed results for a specific trending entry. Note that trending e
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.TrendingApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.TrendingApi(bungie_sdk_python.ApiClient(configuration))
 identifier = 'identifier_example' # str | The identifier for the entity to be returned.
 trending_entry_type = 56 # int | The type of entity to be returned.
 

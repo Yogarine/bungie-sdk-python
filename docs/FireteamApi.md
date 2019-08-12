@@ -1,4 +1,4 @@
-# bungie-sdk-python.FireteamApi
+# bungie_sdk_python.FireteamApi
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -24,18 +24,18 @@ Gets a count of all active non-public fireteams for the specified clan. Maximum 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | The group id of the clan.
 
 try:
@@ -50,16 +50,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | The group id of the clan.
 
 try:
@@ -103,18 +103,18 @@ Gets a listing of all of this clan's fireteams that are have available slots. Ca
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 activity_type = 56 # int | The activity type to filter by.
 date_range = 56 # int | The date range to grab available fireteams.
 group_id = 56 # int | The group id of the clan.
@@ -136,16 +136,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 activity_type = 56 # int | The activity type to filter by.
 date_range = 56 # int | The date range to grab available fireteams.
 group_id = 56 # int | The group id of the clan.
@@ -203,18 +203,18 @@ Gets a specific clan fireteam.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 fireteam_id = 56 # int | The unique id of the fireteam.
 group_id = 56 # int | The group id of the clan.
 
@@ -230,16 +230,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 fireteam_id = 56 # int | The unique id of the fireteam.
 group_id = 56 # int | The group id of the clan.
 
@@ -285,18 +285,18 @@ Gets a listing of all clan fireteams that caller is an applicant, a member, or a
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | The group id of the clan. (This parameter is ignored unless the optional query parameter groupFilter is true).
 include_closed = True # bool | If true, return fireteams that have been closed.
 page = 56 # int | Deprecated parameter, ignored.
@@ -316,16 +316,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | The group id of the clan. (This parameter is ignored unless the optional query parameter groupFilter is true).
 include_closed = True # bool | If true, return fireteams that have been closed.
 page = 56 # int | Deprecated parameter, ignored.
@@ -379,18 +379,18 @@ Gets a listing of all public fireteams starting now with open slots. Caller is n
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 activity_type = 56 # int | The activity type to filter by.
 date_range = 56 # int | The date range to grab available fireteams.
 page = 56 # int | Zero based page
@@ -410,16 +410,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.FireteamApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.FireteamApi(bungie_sdk_python.ApiClient(configuration))
 activity_type = 56 # int | The activity type to filter by.
 date_range = 56 # int | The date range to grab available fireteams.
 page = 56 # int | Zero based page

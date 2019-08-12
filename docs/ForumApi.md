@@ -1,4 +1,4 @@
-# bungie-sdk-python.ForumApi
+# bungie_sdk_python.ForumApi
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -29,18 +29,18 @@ Gets a listing of all topics marked as part of the core group.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 category_filter = 56 # int | The category filter.
 page = 56 # int | Zero base page
 quick_date = 56 # int | The date filter.
@@ -92,18 +92,18 @@ Gets tag suggestions based on partial text entry, matching them with other tags 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 partialtag = 'partialtag_example' # str | The partial tag input to generate suggestions from. (optional)
 
 try:
@@ -147,18 +147,18 @@ Gets the specified forum poll.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 topic_id = 56 # int | The post id of the topic that has the poll.
 
 try:
@@ -202,18 +202,18 @@ Returns the post specified and its immediate parent.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 child_post_id = 56 # int | 
 showbanned = 'showbanned_example' # str | If this value is not null or empty, banned posts are requested to be returned (optional)
 
@@ -259,18 +259,18 @@ Returns the post specified and its immediate parent of posts that are awaiting a
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 child_post_id = 56 # int | 
 showbanned = 'showbanned_example' # str | If this value is not null or empty, banned posts are requested to be returned (optional)
 
@@ -316,18 +316,18 @@ Returns a thread of posts at the given parent, optionally returning replies to t
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 get_parent_post = True # bool | 
 page = 56 # int | 
 page_size = 56 # int | 
@@ -385,18 +385,18 @@ Returns a thread of posts starting at the topicId of the input childPostId, opti
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 child_post_id = 56 # int | 
 page = 56 # int | 
 page_size = 56 # int | 
@@ -452,18 +452,18 @@ Allows the caller to get a list of to 25 recruitment thread summary information 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 request_body = NULL # list[int] | 
 
 try:
@@ -507,18 +507,18 @@ Gets the post Id for the given content item's comments, if it exists.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 content_id = 56 # int | 
 
 try:
@@ -562,18 +562,18 @@ Get topics from any forum.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ForumApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ForumApi(bungie_sdk_python.ApiClient(configuration))
 category_filter = 56 # int | A category filter
 group = 56 # int | The group, if any.
 page = 56 # int | Zero paged page number

@@ -1,4 +1,4 @@
-# bungie-sdk-python.DefaultApi
+# bungie_sdk_python.DefaultApi
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -22,18 +22,18 @@ List of available localization cultures
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.DefaultApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.DefaultApi(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_available_locales()
@@ -73,18 +73,18 @@ Get the common settings used by the Bungie.Net environment.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.DefaultApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.DefaultApi(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_common_settings()
@@ -124,18 +124,18 @@ Gets any active global alert for display in the forum banners, help pages, etc. 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.DefaultApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.DefaultApi(bungie_sdk_python.ApiClient(configuration))
 includestreaming = True # bool | Determines whether Streaming Alerts are included in results (optional)
 
 try:

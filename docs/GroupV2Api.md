@@ -1,4 +1,4 @@
-# bungie-sdk-python.GroupV2Api
+# bungie_sdk_python.GroupV2Api
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -53,18 +53,18 @@ An administrative method to allow the founder of a group or clan to give up thei
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 founder_id_new = 56 # int | The new founder for this group. Must already be a group admin.
 group_id = 56 # int | The target group id.
 membership_type = 56 # int | Membership type of the provided founderIdNew.
@@ -112,20 +112,20 @@ Add a new optional conversation/chat channel. Requires admin permissions to the 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the group to edit.
-group_optional_conversation_add_request = bungie-sdk-python.GroupOptionalConversationAddRequest() # GroupsV2.GroupOptionalConversationAddRequest | 
+group_optional_conversation_add_request = bungie_sdk_python.GroupOptionalConversationAddRequest() # GroupsV2.GroupOptionalConversationAddRequest | 
 
 try:
     api_response = api_instance.add_optional_conversation(group_id, group_optional_conversation_add_request)
@@ -139,18 +139,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the group to edit.
-group_optional_conversation_add_request = bungie-sdk-python.GroupOptionalConversationAddRequest() # GroupsV2.GroupOptionalConversationAddRequest | 
+group_optional_conversation_add_request = bungie_sdk_python.GroupOptionalConversationAddRequest() # GroupsV2.GroupOptionalConversationAddRequest | 
 
 try:
     api_response = api_instance.add_optional_conversation(group_id, group_optional_conversation_add_request)
@@ -194,20 +194,20 @@ Approve all of the pending users for the given group.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
-group_application_request = bungie-sdk-python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
+group_application_request = bungie_sdk_python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
 
 try:
     api_response = api_instance.approve_all_pending(group_id, group_application_request)
@@ -221,18 +221,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
-group_application_request = bungie-sdk-python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
+group_application_request = bungie_sdk_python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
 
 try:
     api_response = api_instance.approve_all_pending(group_id, group_application_request)
@@ -276,22 +276,22 @@ Approve the given membershipId to join the group/clan as long as they have appli
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
 membership_id = 56 # int | The membership id being approved.
 membership_type = 56 # int | Membership type of the supplied membership ID.
-group_application_request = bungie-sdk-python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
+group_application_request = bungie_sdk_python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
 
 try:
     api_response = api_instance.approve_pending(group_id, membership_id, membership_type, group_application_request)
@@ -305,20 +305,20 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
 membership_id = 56 # int | The membership id being approved.
 membership_type = 56 # int | Membership type of the supplied membership ID.
-group_application_request = bungie-sdk-python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
+group_application_request = bungie_sdk_python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
 
 try:
     api_response = api_instance.approve_pending(group_id, membership_id, membership_type, group_application_request)
@@ -364,20 +364,20 @@ Approve all of the pending users for the given group.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
-group_application_list_request = bungie-sdk-python.GroupApplicationListRequest() # GroupsV2.GroupApplicationListRequest | 
+group_application_list_request = bungie_sdk_python.GroupApplicationListRequest() # GroupsV2.GroupApplicationListRequest | 
 
 try:
     api_response = api_instance.approve_pending_for_list(group_id, group_application_list_request)
@@ -391,18 +391,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
-group_application_list_request = bungie-sdk-python.GroupApplicationListRequest() # GroupsV2.GroupApplicationListRequest | 
+group_application_list_request = bungie_sdk_python.GroupApplicationListRequest() # GroupsV2.GroupApplicationListRequest | 
 
 try:
     api_response = api_instance.approve_pending_for_list(group_id, group_application_list_request)
@@ -446,22 +446,22 @@ Bans the requested member from the requested group for the specified period of t
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID that has the member to ban.
 membership_id = 56 # int | Membership ID of the member to ban from the group.
 membership_type = 56 # int | Membership type of the provided membership ID.
-group_ban_request = bungie-sdk-python.GroupBanRequest() # GroupsV2.GroupBanRequest | 
+group_ban_request = bungie_sdk_python.GroupBanRequest() # GroupsV2.GroupBanRequest | 
 
 try:
     api_response = api_instance.ban_member(group_id, membership_id, membership_type, group_ban_request)
@@ -475,20 +475,20 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID that has the member to ban.
 membership_id = 56 # int | Membership ID of the member to ban from the group.
 membership_type = 56 # int | Membership type of the provided membership ID.
-group_ban_request = bungie-sdk-python.GroupBanRequest() # GroupsV2.GroupBanRequest | 
+group_ban_request = bungie_sdk_python.GroupBanRequest() # GroupsV2.GroupBanRequest | 
 
 try:
     api_response = api_instance.ban_member(group_id, membership_id, membership_type, group_ban_request)
@@ -534,20 +534,20 @@ Deny all of the pending users for the given group.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
-group_application_request = bungie-sdk-python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
+group_application_request = bungie_sdk_python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
 
 try:
     api_response = api_instance.deny_all_pending(group_id, group_application_request)
@@ -561,18 +561,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
-group_application_request = bungie-sdk-python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
+group_application_request = bungie_sdk_python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
 
 try:
     api_response = api_instance.deny_all_pending(group_id, group_application_request)
@@ -616,20 +616,20 @@ Deny all of the pending users for the given group that match the passed-in .
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
-group_application_list_request = bungie-sdk-python.GroupApplicationListRequest() # GroupsV2.GroupApplicationListRequest | 
+group_application_list_request = bungie_sdk_python.GroupApplicationListRequest() # GroupsV2.GroupApplicationListRequest | 
 
 try:
     api_response = api_instance.deny_pending_for_list(group_id, group_application_list_request)
@@ -643,18 +643,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group.
-group_application_list_request = bungie-sdk-python.GroupApplicationListRequest() # GroupsV2.GroupApplicationListRequest | 
+group_application_list_request = bungie_sdk_python.GroupApplicationListRequest() # GroupsV2.GroupApplicationListRequest | 
 
 try:
     api_response = api_instance.deny_pending_for_list(group_id, group_application_list_request)
@@ -698,20 +698,20 @@ Edit an existing group's clan banner. You must have suitable permissions in the 
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the group to edit.
-clan_banner = bungie-sdk-python.ClanBanner() # GroupsV2.ClanBanner | 
+clan_banner = bungie_sdk_python.ClanBanner() # GroupsV2.ClanBanner | 
 
 try:
     api_response = api_instance.edit_clan_banner(group_id, clan_banner)
@@ -725,18 +725,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the group to edit.
-clan_banner = bungie-sdk-python.ClanBanner() # GroupsV2.ClanBanner | 
+clan_banner = bungie_sdk_python.ClanBanner() # GroupsV2.ClanBanner | 
 
 try:
     api_response = api_instance.edit_clan_banner(group_id, clan_banner)
@@ -780,20 +780,20 @@ Edit group options only available to a founder. You must have suitable permissio
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the group to edit.
-group_options_edit_action = bungie-sdk-python.GroupOptionsEditAction() # GroupsV2.GroupOptionsEditAction | 
+group_options_edit_action = bungie_sdk_python.GroupOptionsEditAction() # GroupsV2.GroupOptionsEditAction | 
 
 try:
     api_response = api_instance.edit_founder_options(group_id, group_options_edit_action)
@@ -807,18 +807,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the group to edit.
-group_options_edit_action = bungie-sdk-python.GroupOptionsEditAction() # GroupsV2.GroupOptionsEditAction | 
+group_options_edit_action = bungie_sdk_python.GroupOptionsEditAction() # GroupsV2.GroupOptionsEditAction | 
 
 try:
     api_response = api_instance.edit_founder_options(group_id, group_options_edit_action)
@@ -862,20 +862,20 @@ Edit an existing group. You must have suitable permissions in the group to perfo
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the group to edit.
-group_edit_action = bungie-sdk-python.GroupEditAction() # GroupsV2.GroupEditAction | 
+group_edit_action = bungie_sdk_python.GroupEditAction() # GroupsV2.GroupEditAction | 
 
 try:
     api_response = api_instance.edit_group(group_id, group_edit_action)
@@ -889,18 +889,18 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID of the group to edit.
-group_edit_action = bungie-sdk-python.GroupEditAction() # GroupsV2.GroupEditAction | 
+group_edit_action = bungie_sdk_python.GroupEditAction() # GroupsV2.GroupEditAction | 
 
 try:
     api_response = api_instance.edit_group(group_id, group_edit_action)
@@ -944,18 +944,18 @@ Edit the membership type of a given member. You must have suitable permissions i
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group to which the member belongs.
 membership_id = 56 # int | Membership ID to modify.
 membership_type = 56 # int | Membership type of the provide membership ID.
@@ -973,16 +973,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group to which the member belongs.
 membership_id = 56 # int | Membership ID to modify.
 membership_type = 56 # int | Membership type of the provide membership ID.
@@ -1032,21 +1032,21 @@ Edit the settings of an optional conversation/chat channel. Requires admin permi
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 conversation_id = 56 # int | Conversation Id of the channel being edited.
 group_id = 56 # int | Group ID of the group to edit.
-group_optional_conversation_edit_request = bungie-sdk-python.GroupOptionalConversationEditRequest() # GroupsV2.GroupOptionalConversationEditRequest | 
+group_optional_conversation_edit_request = bungie_sdk_python.GroupOptionalConversationEditRequest() # GroupsV2.GroupOptionalConversationEditRequest | 
 
 try:
     api_response = api_instance.edit_optional_conversation(conversation_id, group_id, group_optional_conversation_edit_request)
@@ -1060,19 +1060,19 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 conversation_id = 56 # int | Conversation Id of the channel being edited.
 group_id = 56 # int | Group ID of the group to edit.
-group_optional_conversation_edit_request = bungie-sdk-python.GroupOptionalConversationEditRequest() # GroupsV2.GroupOptionalConversationEditRequest | 
+group_optional_conversation_edit_request = bungie_sdk_python.GroupOptionalConversationEditRequest() # GroupsV2.GroupOptionalConversationEditRequest | 
 
 try:
     api_response = api_instance.edit_optional_conversation(conversation_id, group_id, group_optional_conversation_edit_request)
@@ -1117,18 +1117,18 @@ Get the list of members in a given group who are of admin level or higher.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 currentpage = 56 # int | Page number (starting with 1). Each page has a fixed size of 50 items per page.
 group_id = 56 # int | The ID of the group.
 
@@ -1174,18 +1174,18 @@ Returns a list of all available group avatars for the signed-in user.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_available_avatars()
@@ -1225,18 +1225,18 @@ Returns a list of all available group themes.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_available_themes()
@@ -1276,18 +1276,18 @@ Get the list of banned members in a given group. Only accessible to group Admins
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 currentpage = 56 # int | Page number (starting with 1). Each page has a fixed size of 50 entries.
 group_id = 56 # int | Group ID whose banned members you are fetching
 
@@ -1303,16 +1303,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 currentpage = 56 # int | Page number (starting with 1). Each page has a fixed size of 50 entries.
 group_id = 56 # int | Group ID whose banned members you are fetching
 
@@ -1358,18 +1358,18 @@ Get information about a specific group of the given ID.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Requested group's id.
 
 try:
@@ -1413,18 +1413,18 @@ Get information about a specific group with the given name and type.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_name = 'group_name_example' # str | Exact name of the group to find.
 group_type = 56 # int | Type of group to find.
 
@@ -1470,19 +1470,19 @@ Get information about a specific group with the given name and type. The POST ve
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
-group_name_search_request = bungie-sdk-python.GroupNameSearchRequest() # GroupsV2.GroupNameSearchRequest | 
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
+group_name_search_request = bungie_sdk_python.GroupNameSearchRequest() # GroupsV2.GroupNameSearchRequest | 
 
 try:
     api_response = api_instance.get_group_by_name_v2(group_name_search_request)
@@ -1525,18 +1525,18 @@ Gets a list of available optional conversation channels and their settings.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Requested group's id.
 
 try:
@@ -1580,18 +1580,18 @@ Get information about the groups that a given member has joined.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 filter = 56 # int | Filter apply to list of joined groups.
 group_type = 56 # int | Type of group the supplied member founded.
 membership_id = 56 # int | Membership ID to for which to find founded groups.
@@ -1641,18 +1641,18 @@ Get the list of users who have been invited into the group.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 currentpage = 56 # int | Page number (starting with 1). Each page has a fixed size of 50 items per page.
 group_id = 56 # int | ID of the group.
 
@@ -1668,16 +1668,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 currentpage = 56 # int | Page number (starting with 1). Each page has a fixed size of 50 items per page.
 group_id = 56 # int | ID of the group.
 
@@ -1723,18 +1723,18 @@ Get the list of members in a given group.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 currentpage = 56 # int | Page number (starting with 1). Each page has a fixed size of 50 items per page.
 group_id = 56 # int | The ID of the group.
 member_type = 56 # int | Filter out other member types. Use None for all members. (optional)
@@ -1784,18 +1784,18 @@ Get the list of users who are awaiting a decision on their application to join a
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 currentpage = 56 # int | Page number (starting with 1). Each page has a fixed size of 50 items per page.
 group_id = 56 # int | ID of the group.
 
@@ -1811,16 +1811,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 currentpage = 56 # int | Page number (starting with 1). Each page has a fixed size of 50 items per page.
 group_id = 56 # int | ID of the group.
 
@@ -1866,18 +1866,18 @@ Get information about the groups that a given member has applied to or been invi
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 filter = 56 # int | Filter apply to list of potential joined groups.
 group_type = 56 # int | Type of group the supplied member applied.
 membership_id = 56 # int | Membership ID to for which to find applied groups.
@@ -1927,18 +1927,18 @@ Gets groups recommended for you based on the groups to whom those you follow bel
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 create_date_range = 56 # int | Requested range in which to pull recommended groups
 group_type = 56 # int | Type of groups requested
 
@@ -1954,16 +1954,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 create_date_range = 56 # int | Requested range in which to pull recommended groups
 group_type = 56 # int | Type of groups requested
 
@@ -2009,18 +2009,18 @@ Gets the state of the user's clan invite preferences for a particular membership
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 m_type = 56 # int | The Destiny membership type of the account we wish to access settings.
 
 try:
@@ -2035,16 +2035,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 m_type = 56 # int | The Destiny membership type of the account we wish to access settings.
 
 try:
@@ -2088,19 +2088,19 @@ Search for Groups.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
-group_query = bungie-sdk-python.GroupQuery() # GroupsV2.GroupQuery | 
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
+group_query = bungie_sdk_python.GroupQuery() # GroupsV2.GroupQuery | 
 
 try:
     api_response = api_instance.group_search(group_query)
@@ -2143,22 +2143,22 @@ Invite a user to join this group.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group you would like to join.
 membership_id = 56 # int | Membership id of the account being invited.
 membership_type = 56 # int | MembershipType of the account being invited.
-group_application_request = bungie-sdk-python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
+group_application_request = bungie_sdk_python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
 
 try:
     api_response = api_instance.individual_group_invite(group_id, membership_id, membership_type, group_application_request)
@@ -2172,20 +2172,20 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group you would like to join.
 membership_id = 56 # int | Membership id of the account being invited.
 membership_type = 56 # int | MembershipType of the account being invited.
-group_application_request = bungie-sdk-python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
+group_application_request = bungie_sdk_python.GroupApplicationRequest() # GroupsV2.GroupApplicationRequest | 
 
 try:
     api_response = api_instance.individual_group_invite(group_id, membership_id, membership_type, group_application_request)
@@ -2231,18 +2231,18 @@ Cancels a pending invitation to join a group.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group you would like to join.
 membership_id = 56 # int | Membership id of the account being cancelled.
 membership_type = 56 # int | MembershipType of the account being cancelled.
@@ -2259,16 +2259,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | ID of the group you would like to join.
 membership_id = 56 # int | Membership id of the account being cancelled.
 membership_type = 56 # int | MembershipType of the account being cancelled.
@@ -2316,18 +2316,18 @@ Kick a member from the given group, forcing them to reapply if they wish to re-j
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID to kick the user from.
 membership_id = 56 # int | Membership ID to kick.
 membership_type = 56 # int | Membership type of the provided membership ID.
@@ -2344,16 +2344,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | Group ID to kick the user from.
 membership_id = 56 # int | Membership ID to kick.
 membership_type = 56 # int | Membership type of the provided membership ID.
@@ -2401,18 +2401,18 @@ Allows a founder to manually recover a group they can see in game but not on bun
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_type = 56 # int | Type of group the supplied member founded.
 membership_id = 56 # int | Membership ID to for which to find founded groups.
 membership_type = 56 # int | Membership type of the supplied membership ID.
@@ -2460,18 +2460,18 @@ Unbans the requested member, allowing them to re-apply for membership.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | 
 membership_id = 56 # int | Membership ID of the member to unban from the group
 membership_type = 56 # int | Membership type of the provided membership ID.
@@ -2488,16 +2488,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.GroupV2Api(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.GroupV2Api(bungie_sdk_python.ApiClient(configuration))
 group_id = 56 # int | 
 membership_id = 56 # int | Membership ID of the member to unban from the group
 membership_type = 56 # int | Membership type of the provided membership ID.

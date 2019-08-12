@@ -1,4 +1,4 @@
-# bungie-sdk-python.CommunityContentApi
+# bungie_sdk_python.CommunityContentApi
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -25,18 +25,18 @@ Returns community content.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.CommunityContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.CommunityContentApi(bungie_sdk_python.ApiClient(configuration))
 media_filter = 56 # int | The type of media to get
 page = 56 # int | Zero based page
 sort = 56 # int | The sort mode.
@@ -84,18 +84,18 @@ Returns info about community members who are live streaming.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.CommunityContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.CommunityContentApi(bungie_sdk_python.ApiClient(configuration))
 page = 56 # int | Zero based page.
 partnership_type = 56 # int | The type of partnership for which the status should be returned.
 sort = 56 # int | The sort mode.
@@ -147,18 +147,18 @@ Returns info about community members who are live streaming in your clans.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.CommunityContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.CommunityContentApi(bungie_sdk_python.ApiClient(configuration))
 page = 56 # int | Zero based page.
 partnership_type = 56 # int | The type of partnership for which the status should be returned.
 sort = 56 # int | The sort mode.
@@ -206,18 +206,18 @@ Returns info about community members who are live streaming among your friends.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.CommunityContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.CommunityContentApi(bungie_sdk_python.ApiClient(configuration))
 page = 56 # int | Zero based page.
 partnership_type = 56 # int | The type of partnership for which the status should be returned.
 sort = 56 # int | The sort mode.
@@ -265,18 +265,18 @@ Returns info about Featured live streams.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.CommunityContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.CommunityContentApi(bungie_sdk_python.ApiClient(configuration))
 page = 56 # int | Zero based page.
 partnership_type = 56 # int | The type of partnership for which the status should be returned.
 sort = 56 # int | The sort mode.
@@ -326,18 +326,18 @@ Gets the Live Streaming status of a particular Account and Membership Type.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.CommunityContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.CommunityContentApi(bungie_sdk_python.ApiClient(configuration))
 membership_id = 56 # int | The membershipId related to that type.
 membership_type = 56 # int | The type of account for which info will be extracted.
 partnership_type = 56 # int | The type of partnership for which info will be extracted.

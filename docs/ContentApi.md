@@ -1,4 +1,4 @@
-# bungie-sdk-python.ContentApi
+# bungie_sdk_python.ContentApi
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -25,18 +25,18 @@ Returns a content item referenced by id
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ContentApi(bungie_sdk_python.ApiClient(configuration))
 id = 56 # int | 
 locale = 'locale_example' # str | 
 head = True # bool | false (optional)
@@ -84,18 +84,18 @@ Returns the newest item that matches a given tag and Content Type.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ContentApi(bungie_sdk_python.ApiClient(configuration))
 locale = 'locale_example' # str | 
 tag = 'tag_example' # str | 
 type = 'type_example' # str | 
@@ -145,18 +145,18 @@ Gets an object describing a particular variant of content.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ContentApi(bungie_sdk_python.ApiClient(configuration))
 type = 'type_example' # str | 
 
 try:
@@ -200,18 +200,18 @@ Searches for Content Items that match the given Tag and Content Type.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ContentApi(bungie_sdk_python.ApiClient(configuration))
 locale = 'locale_example' # str | 
 tag = 'tag_example' # str | 
 type = 'type_example' # str | 
@@ -265,18 +265,18 @@ Gets content based on querystring information passed in. Provides basic search a
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ContentApi(bungie_sdk_python.ApiClient(configuration))
 locale = 'locale_example' # str | 
 ctype = 'ctype_example' # str | Content type tag: Help, News, etc. Supply multiple ctypes separated by space. (optional)
 currentpage = 56 # int | Page number for the search results, starting with page 1. (optional)
@@ -332,18 +332,18 @@ Search for Help Articles.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.ContentApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.ContentApi(bungie_sdk_python.ApiClient(configuration))
 searchtext = 'searchtext_example' # str | 
 size = 'size_example' # str | 
 

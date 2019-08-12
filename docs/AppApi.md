@@ -1,4 +1,4 @@
-# bungie-sdk-python.AppApi
+# bungie_sdk_python.AppApi
 
 All URIs are relative to *https://www.bungie.net/Platform*
 
@@ -21,18 +21,18 @@ Get API usage by application for time frame specified. You can go as far back as
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.AppApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.AppApi(bungie_sdk_python.ApiClient(configuration))
 application_id = 56 # int | ID of the application to get usage statistics.
 end = '2013-10-20T19:20:30+01:00' # datetime | End time for query. Goes to now if not specified. (optional)
 start = '2013-10-20T19:20:30+01:00' # datetime | Start time for query. Goes to 24 hours ago if not specified. (optional)
@@ -49,16 +49,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth2
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.AppApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.AppApi(bungie_sdk_python.ApiClient(configuration))
 application_id = 56 # int | ID of the application to get usage statistics.
 end = '2013-10-20T19:20:30+01:00' # datetime | End time for query. Goes to now if not specified. (optional)
 start = '2013-10-20T19:20:30+01:00' # datetime | Start time for query. Goes to 24 hours ago if not specified. (optional)
@@ -106,18 +106,18 @@ Get list of applications created by Bungie.
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.AppApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.AppApi(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_bungie_applications()

@@ -24,7 +24,7 @@ pip install git+https://github.com/Yogarine/bungie-sdk-python.git
 
 Then import the package:
 ```python
-import bungie-sdk-python 
+import bungie_sdk_python 
 ```
 
 ### Setuptools
@@ -38,7 +38,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import bungie-sdk-python
+import bungie_sdk_python
 ```
 
 ## Getting Started
@@ -48,18 +48,18 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import bungie-sdk-python
-from bungie-sdk-python.rest import ApiException
+import bungie_sdk_python
+from bungie_sdk_python.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: apiKey
-configuration = bungie-sdk-python.Configuration()
+configuration = bungie_sdk_python.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = bungie-sdk-python.DefaultApi(bungie-sdk-python.ApiClient(configuration))
+api_instance = bungie_sdk_python.DefaultApi(bungie_sdk_python.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_available_locales()

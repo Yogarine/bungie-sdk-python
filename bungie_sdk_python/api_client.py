@@ -23,9 +23,9 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from bungie-sdk-python.configuration import Configuration
-import bungie-sdk-python.Model
-from bungie-sdk-python import rest
+from bungie_sdk_python.configuration import Configuration
+import bungie_sdk_python.Model
+from bungie_sdk_python import rest
 
 
 class ApiClient(object):
@@ -272,7 +272,7 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(bungie-sdk-python.Model, klass)
+                klass = getattr(bungie_sdk_python.Model, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)
