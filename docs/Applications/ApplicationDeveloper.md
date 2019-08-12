@@ -1,0 +1,12 @@
+# ApplicationDeveloper
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**role** | **int** |  | [optional] 
+**api_eula_version** | **int** |  | [optional] 
+**user** | [**UserInfoCard**](UserInfoCard.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

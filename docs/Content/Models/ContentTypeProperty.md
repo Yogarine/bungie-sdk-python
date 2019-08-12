@@ -1,0 +1,50 @@
+# ContentTypeProperty
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **str** |  | [optional] 
+**readable_name** | **str** |  | [optional] 
+**value** | **str** |  | [optional] 
+**property_description** | **str** |  | [optional] 
+**localizable** | **bool** |  | [optional] 
+**fallback** | **bool** |  | [optional] 
+**enabled** | **bool** |  | [optional] 
+**order** | **int** |  | [optional] 
+**visible** | **bool** |  | [optional] 
+**is_title** | **bool** |  | [optional] 
+**required** | **bool** |  | [optional] 
+**max_length** | **int** |  | [optional] 
+**max_byte_length** | **int** |  | [optional] 
+**max_file_size** | **int** |  | [optional] 
+**regexp** | **str** |  | [optional] 
+**validate_as** | **str** |  | [optional] 
+**rss_attribute** | **str** |  | [optional] 
+**visible_dependency** | **str** |  | [optional] 
+**visible_on** | **str** |  | [optional] 
+**datatype** | **int** |  | [optional] 
+**attributes** | **dict(str, str)** |  | [optional] 
+**child_properties** | [**list[ContentTypeProperty]**](ContentTypeProperty.md) |  | [optional] 
+**content_type_allowed** | **str** |  | [optional] 
+**bind_to_property** | **str** |  | [optional] 
+**bound_regex** | **str** |  | [optional] 
+**representation_selection** | **dict(str, str)** |  | [optional] 
+**default_values** | [**list[ContentTypeDefaultValue]**](ContentTypeDefaultValue.md) |  | [optional] 
+**is_external_allowed** | **bool** |  | [optional] 
+**property_section** | **str** |  | [optional] 
+**weight** | **int** |  | [optional] 
+**entitytype** | **str** |  | [optional] 
+**is_combo** | **bool** |  | [optional] 
+**suppress_property** | **bool** |  | [optional] 
+**legal_content_types** | **list[str]** |  | [optional] 
+**representation_validation_string** | **str** |  | [optional] 
+**min_width** | **int** |  | [optional] 
+**max_width** | **int** |  | [optional] 
+**min_height** | **int** |  | [optional] 
+**max_height** | **int** |  | [optional] 
+**is_video** | **bool** |  | [optional] 
+**is_image** | **bool** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
